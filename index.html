@@ -47,13 +47,13 @@
         var video = document.getElementById("video");
         if (Hls.isSupported()) {
           var hls = new Hls();
-          hls.loadSource("https://1a-1791.com/live/v0xi25uh/slot-111/rgci-lz9s_1080p/chunklist_DVR.m3u8");
+          hls.loadSource("https://top1-cdnnew.koskoros.ru/top1-cdn/7UHvIS62zx/mono.m3u8");
           hls.attachMedia(video);
           hls.on(Hls.Events.MANIFEST_PARSED, function () {
             video.play();
           });
         } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-          video.src = "https://1a-1791.com/live/v0xi25uh/slot-111/rgci-lz9s_1080p/chunklist_DVR.m3u8";
+          video.src = "https://top1-cdnnew.koskoros.ru/top1-cdn/7UHvIS62zx/mono.m3u8";
           video.addEventListener("canplay", function () {
             video.play();
           });
